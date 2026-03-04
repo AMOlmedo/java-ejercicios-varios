@@ -13,10 +13,9 @@ public class tablasTodas {
         System.out.println("TABLAS DE MULTIPLICAR");
         int n;
         for (int i=0; i<=10; i++){
-            for (int j, j<=10: java.++){
+            
             System.out.println(" ");
         }
         }
     
     }
-}
