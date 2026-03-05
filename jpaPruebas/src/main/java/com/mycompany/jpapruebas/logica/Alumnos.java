@@ -1,21 +1,34 @@
-
+//Clase Alumnos 
 package com.mycompany.jpapruebas.logica;
 
+import java.io.Serializable;
+import java.util.Date;
+import javax.persistence.Basic;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+
+
 
 @Entity
-public class Alumnos {
+public class Alumnos implements Serializable {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     private int id;
+    @Basic
     private String Nombre;
     private String Apellido;
-    private String fechaNac;
+    @Temporal(TemporalType.DATE)
+    private Date fechaNac;
 
-    public Alumnos(int id, String Nombre, String Apellido, String fechaNac) {
+    public Alumnos() {
+    }
+    
+    public Alumnos(int id, String Nombre, String Apellido, Date fechaNac) {
         this.id = id;
         this.Nombre = Nombre;
         this.Apellido = Apellido;
@@ -34,7 +47,7 @@ public class Alumnos {
         return Apellido;
     }
 
-    public String getFechaNac() {
+    public Date getFechaNac() {
         return fechaNac;
     }
 
@@ -50,7 +63,7 @@ public class Alumnos {
         this.Apellido = Apellido;
     }
 
-    public void setFechaNac(String fechaNac) {
+    public void setFechaNac(Date fechaNac) {
         this.fechaNac = fechaNac;
     }
     
