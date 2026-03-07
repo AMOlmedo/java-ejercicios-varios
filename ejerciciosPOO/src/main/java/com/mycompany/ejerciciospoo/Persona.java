@@ -3,11 +3,11 @@ package com.mycompany.ejerciciospoo;
 
 public class Persona {
     //atributos o caracteristicas
-    int  id;
-    String nombre;
-    String apellido;
-    String direccion;
-    int edad;
+    private int  id;
+    private String nombre;
+    private String apellido;
+    private String direccion;
+    private int edad;
 
     public Persona() { //constructor vacio
     }
