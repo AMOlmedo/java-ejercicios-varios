@@ -1,6 +1,9 @@
 
 package com.mycompany.ejerciciospoo;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class EjerciciosPOO {
 
@@ -22,9 +25,25 @@ public class EjerciciosPOO {
         
         emp.getArea();
                 
+       //Declaracion e iniciazion de una ArrayList
+       List<Persona> lista = new ArrayList<Persona>();
+       lista.add(new Persona(2, "kuka", "denadie", "lshs", 15));
+       lista.add(new Persona(2, "racha", "detos", "lshs", 10));
+       lista.add(new Persona(2, "rita", "cielo", "lshs", 17));
+       lista.add(new Persona(2, "toto", "malo", "cdad", 80));
+       
+        //recorrer for indice
+        System.out.println("===== for ======");
+        for (int i = 0; i < lista.size(); i++) {
+            System.out.println("prueba "+ lista.get(i).getNombre());
+        }
         
-        
-        
+        //recorrer con foreach
+        System.out.println("======= foreach====");
+        for (Persona perso:lista){
+            System.out.println("prueba " + perso.getNombre());
+            
+        }
         
     }
 }
