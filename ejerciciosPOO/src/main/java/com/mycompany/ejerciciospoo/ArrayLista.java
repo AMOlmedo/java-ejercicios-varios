@@ -24,7 +24,7 @@ public class ArrayLista {
         //remove con ArrayLsit
         ListaArray.remove(1);
         
-        String nombreBorrar = "Kara";
+        String nombreBorrar = "kara";
         for (Persona persona2 :listaLinked){
             if(persona2.getNombre().equals(nombreBorrar)){
                 listaLinked.remove(persona2);
@@ -33,16 +33,21 @@ public class ArrayLista {
         }
         
         System.out.println("==== Luego de  eliminar=====");
-        System.out.println("====ArrayList======");
+        System.out.println("====ArrayList: borra por indice ======");
             for (Persona persona:ListaArray){
-                System.out.println("Prueba" + persona.getNombre());        
+                System.out.println("Prueba " + persona.getNombre());        
             }
         
-         System.out.println("==== LinkedList=====");
+         System.out.println("==== LinkedList borra por nombre del elemento =====");
          for ( Persona persona:listaLinked){
              System.out.println(" prueba " + persona.getNombre());
          }
-            
+        System.out.println("Tamanio de las listas:"); 
+        System.out.println("ArrayList " + ListaArray.size()); 
+        System.out.println("LinkedList " + listaLinked.size()); 
+        System.out.println(" PRIMER Y ULTIMO OBJETO (solo para linkedLsit");    
+        System.out.println("primer obj linkedList  "+ listaLinked.getFirst().toString());
+        System.out.println("ultimo obj linkedList " + listaLinked.getLast().toString());
         
     }
     

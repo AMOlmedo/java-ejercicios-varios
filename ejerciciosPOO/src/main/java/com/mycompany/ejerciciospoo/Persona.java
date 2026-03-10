@@ -67,6 +67,13 @@ public class Persona {
     // void es un procedimiento no debuelva algo cmo un afuncion
     public void mostrarNombre(){
     
+        
+        
+    }
+
+    @Override
+    public String toString() {
+        return "Persona{" + "id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", direccion=" + direccion + ", edad=" + edad + '}';
     }
      
 }
