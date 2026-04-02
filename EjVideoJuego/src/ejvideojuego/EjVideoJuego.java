@@ -22,7 +22,21 @@ public class EjVideoJuego {
         listaVideoJuegos.add(video4);
         listaVideoJuegos.add(video5);
         
+        for (VideoJuego video : listaVideoJuegos){
+            System.out.println("Titulo: " + video.getTitulo() + " consola: " + video.getConsola()+
+                   " cantidad de jugadores: " + video.getCantJugadores()+ " categoria: " + video.getCategoria()); 
+        }
+        System.out.println("==============="); 
+        video1.setTitulo("banjo2");
+        video1.setCantJugadores(10);
+        video3.setConsola("sega");
         
+        for (VideoJuego video : listaVideoJuegos){
+            if (video.getConsola().equals("pc")){
+                System.out.println(video.toString());
+            }
+        }
+       
     }
     
 }
