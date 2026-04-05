@@ -27,3 +27,17 @@ Para ejecutar estos proyectos localmente:
 ---
 Comprometido con el aprendizaje continuo. 💡
 
+## FUNDAMENTOS
+
+Lista completas de wrappers en JAVA
+
+| Primitivo | Wrapper     |
+| --------- | ----------- |
+| `byte`    | `Byte`      |
+| `short`   | `Short`     |
+| `int`     | `Integer`   |
+| `long`    | `Long`      |
+| `float`   | `Float`     |
+| `double`  | `Double`    |
+| `char`    | `Character` |
+| `boolean` | `Boolean`   |
