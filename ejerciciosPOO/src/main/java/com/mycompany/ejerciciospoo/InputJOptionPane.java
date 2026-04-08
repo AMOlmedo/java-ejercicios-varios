@@ -16,6 +16,8 @@ public class InputJOptionPane {
         genero = JOptionPane.showInputDialog("ingres H o M: ").charAt(0);
         altura = Double.parseDouble(JOptionPane.showInputDialog("Ingrese la altura en metros: "));
         
+        JOptionPane.showMessageDialog(null, "tu nombre es " + nombre + " tienes " + edad + " años, tu genero es " + genero + " y tu altura es " + altura + " metros");
+        
         System.out.println("tu nombre es " + nombre + " tienes " + edad + " años, tu genero es " + genero + " y tu altura es " + altura + " metros" );
         
     }
